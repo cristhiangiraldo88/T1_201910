@@ -1,6 +1,6 @@
 package model.data_structures;
 
-public interface IArregloDinamico {
+public interface IArregloDinamico <K>{
 
 	/**
 	 * Retornar el numero de elementos en el arreglo
@@ -13,7 +13,7 @@ public interface IArregloDinamico {
 	 * @param i posicion de consulta
 	 * @return elemento de consulta. null si no hay elemento en posicion.
 	 */
-	String darElemento( int i );
+	K darElemento( int i );
 
 	/**
 	 * Agregar un dato de forma compacta (en la primera casilla disponible) 
@@ -27,7 +27,7 @@ public interface IArregloDinamico {
 	 * @param dato Objeto de busqueda en el arreglo
 	 * @return elemento encontrado en el arreglo (si existe). null si no se encontro el dato.
 	 */
-	String buscar(String dato);
+	K buscar(String dato);
 	
 	/**
 	 * Eliminar un dato del arreglo.
@@ -35,6 +35,6 @@ public interface IArregloDinamico {
 	 * @param dato Objeto de eliminacion en el arreglo
 	 * @return dato eliminado
 	 */
-	String eliminar( String dato );
+	K eliminar( String dato );
 
 }
