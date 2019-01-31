@@ -9,7 +9,7 @@ import java.util.Vector;
  * @author Fernando De la Rosa
  *
  */
-public class ArregloDinamico<K> implements IArregloDinamico {
+public class ArregloDinamico <K>implements IArregloDinamico <K>{
 	/**
 	 * Capacidad maxima del arreglo
 	 */
@@ -65,7 +65,7 @@ public class ArregloDinamico<K> implements IArregloDinamico {
 		// definido en Strings.
 		K encontrado = null;
 		for (int i = 0; i < tamanoAct; i++) {
-			if (elementos.get(i).compareTo(dato) == 0) {
+			if (( elementos.get(i)).compareTo(dato) == 0) {
 				encontrado = elementos.get(i);
 			}
 		}
