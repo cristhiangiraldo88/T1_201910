@@ -65,7 +65,7 @@ public class ArregloDinamico <K>implements IArregloDinamico <K>{
 		// definido en Strings.
 		K encontrado = null;
 		for (int i = 0; i < tamanoAct; i++) {
-			if (( elementos.get(i)).compareTo(dato) == 0) {
+			if (( elementos.get(i)).equals(dato)) {
 				encontrado = elementos.get(i);
 			}
 		}
@@ -90,7 +90,7 @@ public class ArregloDinamico <K>implements IArregloDinamico <K>{
 	public int givePos(K dato) {
 		int pos = -1;
 		for (int i = 0; i < tamanoAct - 1; i++) {
-			if (elementos.get(i).compareTo(dato) == 0) {
+			if (elementos.get(i).equals(dato)) {
 				pos = i;
 			}
 		}
